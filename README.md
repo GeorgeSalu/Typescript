@@ -21,3 +21,31 @@ Como o código TypeScript pode ser compilado para o ES5, você ficará impressio
 Neste Curso, não vamos parar depois do básico. Você aprenderá sobre recursos mais avançados e também como configurar fluxos de trabalho com o TypeScript. Isso inclui um fluxo de trabalho somente de TypeScript, bem como fluxos de trabalho usando Gulp ou Webpack.
 
 Você também aprenderá que não está limitado a projetos Angular 2+ ou JavaScript/TypeScript comuns. Um módulo completo aborda como usar o TypeScript com o Vue e React para se beneficiar de seus recursos, também.
+
+Muito conteúdo!
+
+Eu não sou fã desses cursos que ensinam o básico e não aprofunda nos conceitos. Neste curso você terá conteúdo sobre:
+
+    Tipos e Como usá-los
+
+    Como o compilador do TypeScript funciona
+
+    Recursos do ES6 em TypeScript
+
+    Classes em TypeScript
+
+    Namespaces e Modules
+
+    Interfaces
+
+    Generics
+
+    Decorators
+
+    Como integrar bibliotecas externas a projetos TypeScript
+
+    Como integrar TypeScript com Gulp e Webpack
+
+    Ou como configurar um fluxo de trabalho apenas com TypeScript
+
+    Como usar TypeScript junto com React e Vue
