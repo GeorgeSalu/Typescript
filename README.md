@@ -26,26 +26,14 @@ Muito conteúdo!
 
 Eu não sou fã desses cursos que ensinam o básico e não aprofunda nos conceitos. Neste curso você terá conteúdo sobre:
 
-    Tipos e Como usá-los
-
-    Como o compilador do TypeScript funciona
-
-    Recursos do ES6 em TypeScript
-
-    Classes em TypeScript
-
-    Namespaces e Modules
-
-    Interfaces
-
-    Generics
-
-    Decorators
-
-    Como integrar bibliotecas externas a projetos TypeScript
-
-    Como integrar TypeScript com Gulp e Webpack
-
-    Ou como configurar um fluxo de trabalho apenas com TypeScript
-
-    Como usar TypeScript junto com React e Vue
+    - Tipos e Como usá-los
+    - Como o compilador do TypeScript funciona
+    - Recursos do ES6 em TypeScript
+    - Classes em TypeScript
+    - Namespaces e Modules
+    - Interfaces
+    - Generics
+    - Decorators
+    - Como integrar bibliotecas externas a projetos TypeScript
+    - Como integrar TypeScript com Gulp e Webpack Ou como configurar um fluxo de trabalho apenas com TypeScript
+    - Como usar TypeScript junto com React e Vue
