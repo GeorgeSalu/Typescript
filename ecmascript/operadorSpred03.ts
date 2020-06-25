@@ -10,5 +10,7 @@ tuplaParam1(...tupla)
 
 function tuplaParam2 (...params: [number, string, boolean])  {
   console.log(Array.isArray(params))
-
+  console.log(`2) ${params[0]} ${params[1]} ${params[2]}`)
 }
+
+tuplaParam2(...tupla)
