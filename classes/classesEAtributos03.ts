@@ -3,7 +3,7 @@ class Carro {
 
   constructor(public marca: string, public modelo: string, private velocidadeMaxima: number = 200) {}
 
-  private alterarVelocidade(delta: number): number {
+  protected alterarVelocidade(delta: number): number {
     const novaVelocidade = this.velocidadeAtual + delta
     const velocidadeValida = novaVelocidade >= 0 && novaVelocidade <= this.velocidadeMaxima
 
