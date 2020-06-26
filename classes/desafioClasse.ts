@@ -13,7 +13,7 @@
     /**
      * criar um metodo precoComDesconto
      * quais são os paramentros e o retorno ?
-     * alterar metodo resumo para mostrar o preco com desconto
+     * alterar método resumo para mostrar o preço com desconto
      */
 
     public resumo(): string {
