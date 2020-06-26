@@ -10,6 +10,11 @@
    constructor(public nome: string, public preco: number,
       public desconto: number = 0) {}
 
+    /**
+     * criar um metodo precoComDesconto
+     * quais são os paramentros e o retorno ?
+     * alterar metodo resumo para mostrar o preco com desconto
+     */
 
     public resumo(): string {
       return `${this.nome} custa R$ ${this.preco} (${this.desconto * 100}% off)`
