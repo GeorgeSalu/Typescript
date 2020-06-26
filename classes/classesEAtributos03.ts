@@ -26,5 +26,9 @@ class Carro {
 }
 
 const carro1 = new Carro('ford','k1', 185)
+
+Array(50).fill(0).forEach(() => carro1.acelerar())
 console.log(carro1.acelerar())
-console.log(carro1.acelerar())
+
+Array(50).fill(0).forEach(() => carro1.acelerar())
+console.log(carro1.frear())
