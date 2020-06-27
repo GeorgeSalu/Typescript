@@ -1,13 +1,21 @@
 // Exercício 2 - Herança
-var objeto2D = {
+/*var objeto2D = {
   base: 0,
   altura: 0
+}*/
+
+abstract class objeto2D {
+  public base: number = 0
+  public altura: number = 0
 }
 
-var retangulo = Object.create(objeto2D)
+class Retangulo extends objeto2D {
+  area(): number {
+    return this.base * this.altura
+  }
+}
+
+const retangulo = new Retangulo
 retangulo.base = 5
 retangulo.altura = 7
-retangulo.area = function() {
-  return this.base * this.altura
-}
-console.log(retangulo.area())
+console.log(retangulo)
