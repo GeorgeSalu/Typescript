@@ -1,4 +1,4 @@
-## Typescript
+### Typescript
 
 Muitas pessoas conhecem o TypeScript a partir do Angular 2+. É a linguagem que você tem que usar, certo?
 
@@ -38,6 +38,6 @@ Eu não sou fã desses cursos que ensinam o básico e não aprofunda nos conceit
 
 O que você aprenderá
 
-    Entenda o que é realmente o TypeScript e Como Funciona
-    Por que o TypeScript oferece uma vantagem real sobre o JavaScript pura
-    Use o TypeScript qualquer um dos seus projetos e tenha acesso a recursos como Tipos, Suporte ES6, Classes, Módulos, Interfaces e muito mais
+    - Entenda o que é realmente o TypeScript e Como Funciona
+    - Por que o TypeScript oferece uma vantagem real sobre o JavaScript pura
+    - Use o TypeScript qualquer um dos seus projetos e tenha acesso a recursos como Tipos, Suporte ES6, Classes, Módulos, Interfaces e muito mais
