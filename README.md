@@ -12,8 +12,6 @@ Como o TypeScript é desenvolvido pela Microsoft e fortemente recomendado pelo A
 
 Esteja entre os desenvolvedores que realmente entendem o TypeScript e se torne um profissional diferenciado!
 
-Jornad
-
 Uma jornada ao Futuro
 
 Como o código TypeScript pode ser compilado para o ES5, você ficará impressionado com os vários recursos da próxima geração que você pode começar a usar hoje. Recursos do ES6, ES7, ES8 como Destructuring, Arrow Functions, Promise, Módulos e muito mais. Além dos recursos exclusivos como Decorators, Generics e Interfaces - TypeScript tem todos eles!
