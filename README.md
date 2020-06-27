@@ -35,3 +35,9 @@ Eu não sou fã desses cursos que ensinam o básico e não aprofunda nos conceit
     - Como integrar bibliotecas externas a projetos TypeScript
     - Como integrar TypeScript com Gulp e Webpack Ou como configurar um fluxo de trabalho apenas com TypeScript
     - Como usar TypeScript junto com React e Vue
+
+O que você aprenderá
+
+    Entenda o que é realmente o TypeScript e Como Funciona
+    Por que o TypeScript oferece uma vantagem real sobre o JavaScript pura
+    Use o TypeScript qualquer um dos seus projetos e tenha acesso a recursos como Tipos, Suporte ES6, Classes, Módulos, Interfaces e muito mais
