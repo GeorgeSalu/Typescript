@@ -1,4 +1,4 @@
-namespace Geometria {
+/*namespace Geometria {
   export namespace Areas {
 
     const PI = 3.14
@@ -12,7 +12,7 @@ namespace Geometria {
     }
     
   }
-}
+}*/
 
 console.log(Geometria.Areas.circunferencia(10))
 console.log(Geometria.Areas.retangulo(10,20))
