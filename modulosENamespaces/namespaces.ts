@@ -1,3 +1,5 @@
+///<reference path="geometriaCirc.ts" />
+///<reference path="geometriaRect.ts" />
 
 
 console.log(Geometria.Areas.circunferencia(10))
