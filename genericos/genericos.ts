@@ -123,7 +123,37 @@ fila.imprimir()
 // Array de Objetos (Chave/Valor) -> itens
 // Métodos: obter(Chave), colocar({ C, V })
 // limpar(), imprimir()
-  
+
+type Par<C, V> = {chave: C, valor: V}
+
+class Mapa<C, V> {
+  itens: Array<Par<C, V>> = new Array<Par<C, V>>()
+
+  obter(chave: C) : Par<C, V> | null {
+    const resultado = this.itens
+      .filter(i => i.chave === chave)
+      return resultado ? resultado[0] : null
+  }
+
+  colocar(par: Par<C, V>) {
+     const encotrado = this.obter(par.chave)
+     if(encotrado) {
+       encotrado.valor = par.valor
+     } else {
+       this.itens.push(par)
+     }
+  }
+
+  limpa() {
+    this.itens = new Array<Par<C, V>>()
+  }
+
+  imprimir() {
+    console.log(this.itens)
+  }
+
+}
+
 const mapa = new Mapa<number, string>()
 mapa.colocar({ chave: 1, valor: 'Pedro' })
 mapa.colocar({ chave: 2, valor: 'Rebeca' })
