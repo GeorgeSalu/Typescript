@@ -28,3 +28,16 @@ mudarNome(pessoa)
 saudarComOla(pessoa)
 pessoa.saudar('silva')
 //saudarComOla({nome: 'jonas', idade: 22, xyz: true})
+
+
+// interfaces com classes 
+class Cliente implements Humano {
+  nome: string = ''
+  saudar(sobrenome: string) {
+    console.log('Ola meu nome é'+this.nome)
+  }
+}
+
+const meuCliente = new Cliente()
+meuCliente.nome = 'Han'
+saudarComOla(meuCliente)
