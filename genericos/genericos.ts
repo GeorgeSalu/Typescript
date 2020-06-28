@@ -91,3 +91,30 @@ console.log(new DiferencaEntreDatas(d1, d2).executar())
  * atributos: fila (array)
  * metodos : entrar , proxima imprimir
  */
+class Fila<T> {
+  private fila: Array<T>
+
+  constructor(...args: T[]) {
+    this.fila = args
+  }
+
+  entrar(elemento: T) {
+    this.fila.push(elemento)
+  }
+
+  proximo(): T {
+    const primeiro = this.fila[0]
+    this.fila.splice(0, 1)
+    return primeiro
+  }
+
+  imprimir() {
+    console.log(this.fila)
+  }
+}
+
+const fila = new Fila<string>('gui', 'pedro', 'ana', 'lu')
+
+fila.imprimir()
+fila.entrar('rafael')
+fila.imprimir()
