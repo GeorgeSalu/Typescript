@@ -41,3 +41,19 @@ class Cliente implements Humano {
 const meuCliente = new Cliente()
 meuCliente.nome = 'Han'
 saudarComOla(meuCliente)
+
+//interface Funcao
+
+interface FuncaoCalculo {
+  (a: number, b: number): number
+}
+
+let potencia: FuncaoCalculo 
+
+potencia = function(base: number, exp: number) : number {
+  // Math.pow(3,10)
+  // 3 ** 10
+  return Array(exp).fill(base).reduce((t, a) => t * a)
+}
+
+console.log(potencia(3, 10))
