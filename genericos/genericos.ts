@@ -14,3 +14,9 @@ function echoMelhorado<T>(objeto: T): T {
 console.log(echoMelhorado('joao'))
 console.log(echoMelhorado<number>(27))
 console.log(echoMelhorado({ nome: 'joao', idade: 23 }))
+
+
+//Generics disponiveis na API
+const avaliacoes: Array<number> = [10,2,33]
+avaliacoes.push(8)
+console.log(avaliacoes)
