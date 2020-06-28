@@ -65,3 +65,4 @@ class SomaBinaria extends OperacaoBinaria<number, number> {
 }
 
 console.log(new SomaBinaria(3,4).executar())
+console.log(new SomaBinaria(3,422).executar())
