@@ -85,3 +85,9 @@ class DiferencaEntreDatas extends OperacaoBinaria<Data, string> {
 const d1 = new Data(1, 2, 2030)
 const d2 = new Data(1, 3, 2030)
 console.log(new DiferencaEntreDatas(d1, d2).executar())
+
+/**
+ * desafio classe fila
+ * atributos: fila (array)
+ * metodos : entrar , proxima imprimir
+ */
