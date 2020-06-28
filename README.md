@@ -1,4 +1,4 @@
-### Typescript
+### Typescript 3.9.5
 
 Muitas pessoas conhecem o TypeScript a partir do Angular 2+. É a linguagem que você tem que usar, certo?
 
