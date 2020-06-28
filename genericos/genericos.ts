@@ -91,7 +91,7 @@ console.log(new DiferencaEntreDatas(d1, d2).executar())
  * atributos: fila (array)
  * metodos : entrar , proxima imprimir
  */
-class Fila<T> {
+class Fila<T extends number | string> {
   private fila: Array<T>
 
   constructor(...args: T[]) {
