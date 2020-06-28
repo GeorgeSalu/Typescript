@@ -20,3 +20,13 @@ console.log(echoMelhorado({ nome: 'joao', idade: 23 }))
 const avaliacoes: Array<number> = [10,2,33]
 avaliacoes.push(8)
 console.log(avaliacoes)
+
+//array
+
+function imprimir<T>(args: T[]) {
+  args.forEach(elemento => console.log(elemento))
+}
+
+imprimir([1,2,3])
+imprimir<number>([1,2,3])
+imprimir<string>(['ana','bia', 'carlos'])
