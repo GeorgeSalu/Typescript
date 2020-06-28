@@ -2,6 +2,7 @@ interface Humano {
   nome: string
   idade?: number
   [prop: string]: any
+  saudar(sobrenome: string): void
 }
 
 function saudarComOla(pessoa: Humano) {
@@ -12,12 +13,18 @@ function mudarNome(pessoa: Humano) {
   pessoa.nome = 'joana'
 }
 
-const pessoa = {
+const pessoa: Humano = {
   nome: 'joao',
-  idade: 23
+  idade: 22,
+
+  saudar(sobrenome: string) {
+    console.log('Ola meu nome é '+this.nome + ' '+sobrenome)
+  }
+
 }
 
 saudarComOla(pessoa)
 mudarNome(pessoa)
 saudarComOla(pessoa)
-saudarComOla({nome: 'jonas', idade: 22, xyz: true})
+pessoa.saudar('silva')
+//saudarComOla({nome: 'jonas', idade: 22, xyz: true})
