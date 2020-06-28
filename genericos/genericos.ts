@@ -45,3 +45,16 @@ imprimir<Aluno>([
 type Echo = (data: any) => any
 const chamarEcho: <T>(data: T) => T = echoMelhorado
 console.log(chamarEcho<string>('alguma coisa'))
+
+//classe com Generics
+class OperacaoBinaria {
+  constructor(public operando1: any, public operando2: any) {}
+
+  executar() {
+    return this.operando1 + this.operando2
+  }
+}
+
+console.log(new OperacaoBinaria('Bom ', 'dia').executar())
+console.log(new OperacaoBinaria(3, 7).executar())
+console.log(new OperacaoBinaria(3, 'opa').executar())
