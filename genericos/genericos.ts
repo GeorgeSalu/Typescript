@@ -30,3 +30,13 @@ function imprimir<T>(args: T[]) {
 imprimir([1,2,3])
 imprimir<number>([1,2,3])
 imprimir<string>(['ana','bia', 'carlos'])
+imprimir<{ nome: string, idade: number }>([
+  { nome: 'fulano', idade: 22 }
+])
+
+type Aluno = { nome: string, idade: number }
+imprimir<Aluno>([
+  { nome: 'fulano', idade: 22 },
+  { nome: 'ciclano', idade: 21 },
+  { nome: 'beltrano', idade: 22 }
+])
