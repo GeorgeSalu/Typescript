@@ -1,17 +1,10 @@
-//@logarClasse
-//@logarClasseSe(true)
-@decorator('abc',111)
-class Eletrodomestico {
-  constructor() {
-    console.log('novo ....')
-  }
-}
+
 
 function logarClasse(construtor: Function) {
   console.log(construtor)
 }
 
-new Eletrodomestico()
+//new Eletrodomestico()
 
 function logarClasseSe(valor: boolean) {
   return valor ? logarClasse : null
@@ -22,3 +15,28 @@ function decorator(a: string, b: number) {
     console.log(a + ''+ b)
   }
 }
+
+//@logarClasse
+//@logarClasseSe(true)
+//@decorator('abc',111)
+@logarObjeto
+class Eletrodomestico {
+  constructor() {
+    console.log('novo ....')
+  }
+}
+
+type Construtor = { new(...args: any[]) : {}}
+
+function logarObjeto(construtor: Construtor) {
+  console.log('carregando ....')
+  return class extends construtor {
+    constructor(...args: any[] ){
+      console.log('antes')
+      super(...args)
+      console.log('depois')
+    }
+  }
+}
+
+new Eletrodomestico()
