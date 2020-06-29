@@ -59,6 +59,7 @@ const usuarioLogado = {
   admin: false
 }
 
+@perfilAdmin
 class MudancaAdministrativa {
   critico() {
       console.log('Algo crítico foi alterado!')
@@ -66,3 +67,14 @@ class MudancaAdministrativa {
 }
 
 new MudancaAdministrativa().critico()
+
+function perfilAdmin(construtor: Construtor) {
+  return class extends construtor {
+    constructor(...args: any) {
+      super(...args)
+      if(!usuarioLogado || !usuarioLogado.admin) {
+        throw new Error('sem permissao')
+      }
+    }
+  }
+}
