@@ -5,15 +5,23 @@ const source = require('vinyl-source-stream')
 const tsify = require('tsify')
 
 function limparDist(cb) {
-  cb()
+  return del(['dist'])
 }
 
 function copiarHTML(cb) {
-  cb()
+  return src('public/**/*')
+    .pipe(dest('dist'))
 }
 
 function gerarJS(cb) {
-  cb()
+  return browserify({
+    basedir: '.',
+    entries: ['src/main.ts']
+  })
+    .plugin(tsify)
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(dest('dist'))
 }
 
 exports.default = series(
