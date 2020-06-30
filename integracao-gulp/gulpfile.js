@@ -24,7 +24,14 @@ function gerarJS(cb) {
     .pipe(dest('dist'))
 }
 
+function gerarJSProducao() {
+  return src('dist/app.js')
+    .pipe(rename('app.min.js'))
+    .pipe(unglify())
+}
+
 exports.default = series(
   limparDist,
-  parallel(gerarJS, copiarHTML)
+  parallel(gerarJS, copiarHTML),
+  gerarJSProducao
 )
