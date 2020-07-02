@@ -5,10 +5,19 @@ interface ContadorProps {
   valorInicial?: number
 }
 
-export default class Contador extends Component<ContadorProps> {
+interface ContadorState {
+  valor: number
+}
+
+export default class Contador extends Component<ContadorProps, ContadorState> {
+  
+  state = {
+    valor: this.props.valorInicial || 0
+  }
+  
   render() {
     return (
-      <ContadorValor contador={1234} />
+      <ContadorValor contador={this.state.valor} />
     )
   }
 }
